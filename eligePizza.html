@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PizzeriaUAM</title>
+    <link rel="stylesheet" href="/css/stylos.css">
+    <script type="module" src="/js/animaciones.js"></script>
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h1>PIZZERIA<br> <span href="index.html">GUAM</span></h1>
+    </div>
+    <div class="AccionesDelUsuario">
+        <a href="eligePizza.html">Menu</a>
+        <a href="pidePizza.html">Haz tu pedido</a>
+    </div>
+</header>
+
+<div id="contenido">
+    <h2>Aqui podras ver el menu de pizzas.</h2>
+</div>
+
+<!--Elegir pizza predeterminada o personalizar la pizza-->
+
+<div class="Pizza Peperoni">
+    <h2>Pizza Peperoni</h2>
+    <img src="/img/pproni.png" alt="PizzaPred" width="150" height="150">
+    <p id="pPre">Pizza con salami picante</p>
+</div>
+<div class="Pizza Hawaiiana">
+    <h2>Pizza Hawaiiana</h2>
+    <img src="/img/hawaii.png" alt="PizzaPred" width="150" height="150">
+    <p id="Peperoni">La vendemos porque es muy popular si no ya estuviera descontinuada</p>
+</div>
+<div class="Pizza Mexicana">
+    <h2>Pizza Mexicana</h2>
+    <img src="/img/mexicana.png" alt="PizzaPred" width="150" height="150">
+    <p id="Hawaiiana">Mexicoooooooo!!!s</p>
+</div>
+<div class="Pizza Margarita">
+    <h2>Pizza Margarita</h2>
+    <img src="/img/marga.png" alt="PizzaPred" width="150" height="150">
+    <p id="Mexicana">Pizza traducional Italiana</p>
+</div>
+<div class="Pizza Vegetariana">
+    <h2>Pizza Vegetariana</h2>
+    <img src="/img/veggie.png" alt="PizzaPred" width="150" height="150">
+    <p id="Margarita">Lleva aceitunas negras, cebolla, piminetos, champiñones.</p>
+</div>
+<div class="Pizza meat">
+    <h2>Pizza carnes frias</h2>
+    <img src="/img/carne.png" alt="PizzaPred" width="150" height="150">
+    <p id="meat">Enemiga mortal de la vegetariana ya que solo lleva carne.</p>
+</div>
+<div id="acomodador">
+    <p>Rota la pizza para mas sabor ;)</p>
+<button onclick="rotoplas()">Rotar Pizzas</button>
+</div>
+<div id="acomodador"><p>Aqui podras comparar los diferentes tamaños de pizza</p></div>
+<div id="Tamañopizza"></div>
+
+<div id="acomodador">
+<button id="Chico" type="button" onclick="escalarCiculo('chico')">Chico</button>
+<button id="Mediano" type="button" onclick="escalarCiculo('mediano')">Mediano</button>
+<button id="Grande" type="button" onclick="escalarCiculo('grande')">Grande</button>
+</div>
+<script src="/js/animaciones.js"></script>
+<div id="acomodador">
+    <h3>A pedir pizza se a dichooooo!!!</h3>
+    <a href="pidePizza.html">
+        <button type="button">Pedir Pizza</button>
+    </a>
+</div>
+</body>
+</html>

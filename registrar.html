@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/stylos.css">
+  <title>Formulario de Validación</title>
+</head>
+
+<body>
+
+<form>
+  <!-- Campo para el nombre -->
+  <label for="nombre">Introduzca Su Nombre:</label>
+  <input type="text" id="nombre" name="nombre">
+  <p id="error1" class="error">Introduce un carácter válido</p><br>
+
+  <!-- Campo para la contraseña -->
+  <label for="password">Introduzca Su Contraseña:</label>
+  <input type="password" id="password" name="password" placeholder="mayuculas+minusculas+numeros+@!&#?">
+  <p id="error2" class="error">La contraseña no cumple con los requisitos establecidos</p><br>
+
+  <!-- Campo para el correo electrónico -->
+  <label for="email">Introduzca Un Correo Electrónico:</label>
+  <input type="email" id="email" name="email" placeholder="correo+numero@correo.com">
+  <p id="error3" class="error">Introduce un correo electrónico válido</p><br>
+
+  <!-- Botón para enviar -->
+  <button type="submit">Enviar</button>
+  <div id="resultado"></div>
+</form>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

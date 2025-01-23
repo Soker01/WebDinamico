@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff5733;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: #ffe800;
+}
+
+header .AccionesDelUsuario a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+header .AccionesDelUsuario a:hover {
+    color: #ffe800;
+}
+
+#contenido {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#contenido h2 {
+    color: #ff5733;
+    margin-bottom: 15px;
+}
+
+div[class*="Elige pizza"], .category {
+    display: inline-block;
+    width: 95%;
+    margin: 20px;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+div[class*="Elige pizza"] img,
+.category img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+div[class*="Elige pizza"] h2,
+.category h2 {
+    color: #ff5733;
+    margin-bottom: 10px;
+}
+
+div[class*="Elige pizza"] p,
+.category p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+div[class*="Pizza"] {
+    display: inline-block;
+    width: 45%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div[class*="Pizza"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+div[class*="Pizza"] img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+div[class*="Pizza"] h2 {
+    color: #ff5733;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div[class*="Pizza"] p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    div[class*="Pizza"] {
+        width: 90%;
+    }
+}
+
+#Tamañopizza {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin: 20px auto;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: green;
+}
+
+#acomodador {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#formulario-pedido {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#formulario-pedido h2 {
+    text-align: center;
+    color: #d32f2f;
+}
+
+#pedido-pizza label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#pedido-pizza input,
+#pedido-pizza select,
+#pedido-pizza textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#pedido-pizza textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#pedido-pizza button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#pedido-pizza button:hover {
+    background-color: #b71c1c;
+}
+
+.Pizza {
+    transition: transform 2s ease-in-out; /* Transición suave de 2 segundos */
+}
+#animacion {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000;
+    cursor: pointer;
+    margin: 20px auto;
+}

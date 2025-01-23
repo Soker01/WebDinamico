@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizzeria UAM</title>
+  <link rel="stylesheet" href="/css/stylos.css">
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+
+  <script src="js/configuracionFirebase.js" defer></script>
+  <script src="js/firebase.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <h1>PIZZERIA<br> <span href="index.html">GUAM</span></h1>
+  </div>
+  <div class="AccionesDelUsuario">
+    <a href="eligePizza.html">Menu</a>
+    <a href="pidePizza.html">Haz tu pedido</a>
+  </div>
+</header>
+
+<div id="contenido">
+  <h2>Aquí podrás pedir tu pizza de preferencia y su tamaño.</h2>
+</div>
+
+<!-- Formulario para ordenar pizza -->
+<div id="formulario-pedido">
+  <h2>¡Haz tu pedido!</h2>
+  <form id="pedido-pizza">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+
+    <label for="tipo-pizza">Tipo de Pizza:</label>
+    <select id="tipo-pizza" name="tipo-pizza" required>
+      <option value="" disabled selected>Selecciona tu pizza</option>
+      <option value="Peperoni">Peperoni</option>
+      <option value="Hawaiana">Hawaiana</option>
+      <option value="Mexicana">Mexicana</option>
+      <option value="Margarita">Margarita</option>
+      <option value="Vegetariana">Vegetariana</option>
+    </select>
+
+    <label for="tamaño-pizza">Tamaño:</label>
+    <select id="tamaño-pizza" name="tamaño-pizza" required>
+      <option value="" disabled selected>Selecciona el tamaño</option>
+      <option value="Chico">Chico</option>
+      <option value="Mediano">Mediano</option>
+      <option value="Grande">Grande</option>
+    </select>
+
+    <label for="extras">Extras:</label>
+    <textarea id="extras" name="extras" placeholder="Especifica algún extra o comentario (opcional)"></textarea>
+
+    <button type="submit">Realizar Pedido</button>
+  </form>
+</div>
+
+<!-- Mostrar los pedidos realizados -->
+<div id="lista-pedidos">
+  <h2>Pedidos realizados:</h2>
+  <ul id="pedidos-lista"></ul>
+</div>
+</body>
+</html>
